@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var number1=parseInt(prompt("Enter a first number"));
+        var number2=parseInt(prompt("Enter a second number"));
+
+        if(isNaN(number1) || isNaN(number2)){
+            alert("Enter a valid number");
+        }
+        else if (number1 === 0 || number2 === 0){
+            alert("At least one number is zero");
+        }
+        else if(number1 <0 && number2 <0){
+            alert("Both numbers are negative");
+        }
+        else if(number1 >0 && number2 >0){
+            alert("Both numbers are positive")
+        }
+        else{
+            alert("one is positive and one is negative");
+        }
+    </script>
+</body>
+</html>
